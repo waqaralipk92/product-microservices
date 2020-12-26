@@ -13,10 +13,9 @@ app.use(cors());
 app.use('/users', require('./users/users.controller'));
 app.use('/products', require('./products/products.controller'));
 
-console.log(app._router.stack)
 // global error handler
 app.use(errorHandler);
 
 // start server
-const port = process.env.NODE_ENV === 'production' ? (process.env.PORT || 80) : 4000;
+const port = process.env.NODE_ENV === 'production' ? (process.env.PORT || 80) : 30001;
 app.listen(port, () => console.log('Server listening on port ' + port));

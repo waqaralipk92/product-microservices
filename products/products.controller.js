@@ -6,7 +6,9 @@ const authorize = require('_middleware/authorize');
 const productService = require('./product.service');
 
 // routes
-
+router.get('/health-check', (req, res) => {
+    res.end('Health of service is good.');
+});
 router.post('/store', authorize(), storeSchema, store);
 router.get('/', authorize(), getAll);
 router.get('/:id', authorize(), getById);

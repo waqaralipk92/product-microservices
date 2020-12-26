@@ -6,6 +6,9 @@ const authorize = require('_middleware/authorize')
 const userService = require('./user.service');
 
 // routes
+router.get('/authentication/health-check', (req, res) => {
+    res.end('Health of service is good.');
+});
 router.post('/authenticate', authenticateSchema, authenticate);
 router.post('/register', registerSchema, register);
 router.get('/', authorize(), getAll);

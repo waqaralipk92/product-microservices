@@ -1,10 +1,11 @@
 ﻿{
     "database": {
-        "host": "localhost",
+        "host": "cloud-computing-project-course.ciaci7b1aaha.us-east-1.rds.amazonaws.com",
         "port": 3306,
-        "user": "root",
-        "password": "waqar122313",
+        "user": "moeuser",
+        "password": "cloudcomputing",
         "database": "cloud-computing-project"
     },
     "secret": "abcdefghijklmnopqrstuvwxyz"
 }
+
